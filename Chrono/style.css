@@ -1,0 +1,90 @@
+ body {
+    background-color: rgb(233, 232, 232);
+    width: 99vw;
+    height: 90vh;
+    display: grid;
+    place-items: center;
+}
+
+.Chrono {
+    background-color: #fff;
+    padding: 100px;
+    /*width: 400px;
+    height: 400px;*/
+    border-radius: 10px;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+}
+.Text {
+    display: flex;
+    justify-content: center;
+   /* background-color: red;*/
+    align-items: center;
+}
+.Text > p {
+    font-size: 30px;
+}
+
+
+.Button  {
+    /*background-color: blue;*/
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.Button > button {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.Button > .start {
+    border: none;
+    background-color: Green;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.Button > .start:hover {
+    background-color: #fff;
+    color: green;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+.Button > .stop {
+    border: none;
+    background-color: red;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.Button > .stop:hover {
+    background-color: #fff;
+    color: red;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.Button > .reset {
+    border: none;
+    background-color: orange;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.Button > .reset:hover {
+    background-color: #fff;
+    color: orange;
+    border: 1px solid orange;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    top: 95%;
+    left: 70%;
+    text-align: center;
+    
+}

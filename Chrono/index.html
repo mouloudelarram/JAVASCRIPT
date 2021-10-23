@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Test</title>
+</head>
+<body>
+    <div class="Chrono">
+        <div class="Text">
+            <p>
+                <span>0</span> h : 
+                <span>0</span> m : 
+                <span>0</span> s :
+                <span>0</span> ms
+            </p>
+        </div>
+        <div class="Button">
+            <button class="start" onclick="Chrono.start()">Start</button>
+            <button class="stop" onclick="Chrono.stop()">Stop</button>
+            <button class="reset" onclick="Chrono.reset()">Reset</button>
+        </div>
+    </div>
+    <footer>BY MOULOUD EL ARRAM</footer>
+    <script src="script.js"></script>
+    <!-- <script src="createObject.js"></script> -->
+    <!-- <script src="passage_valeur_ref.js"></script> -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!doctype html>
+<html>
+<head>
+    <script type="text/javascript">
+        /*la fonction getElementByTagName renvoie une liste des éléments portant le nom de balise donné ici "span".*/
+        var sp = document.getElementsByTagName("span");
+        var btn_start=document.getElementById("start");
+        var btn_stop=document.getElementById("stop");
+        var t;
+        var ms=0,s=0,mn=0,h=0;
+         
+         /*La fonction "start" démarre un appel répétitive de la fonction update_chrono par une cadence de 100 milliseconde en utilisant setInterval et désactive le bouton "start" */
+      
+        function start(){
+         t =setInterval(update_chrono,100);
+         btn_start.disabled=true;
+        
+        }
+        /*La fonction update_chrono incrémente le nombre de millisecondes par 1 <==> 1*cadence = 100 */
+        function update_chrono(){
+          ms+=1;
+          /*si ms=10 <==> ms*cadence = 1000ms <==> 1s alors on incrémente le nombre de secondes*/
+             if(ms==10){
+              ms=1;
+              s+=1;
+             }
+             /*on teste si s=60 pour incrémenter le nombre de minute*/
+             if(s==60){
+              s=0;
+              mn+=1;
+             }
+             if(mn==60){
+              mn=0;
+              h+=1;
+             }
+             /*afficher les nouvelle valeurs*/
+             sp[0].innerHTML=h+" h";
+             sp[1].innerHTML=mn+" min";
+             sp[2].innerHTML=s+" s";
+             sp[3].innerHTML=ms+" ms";
+      
+        }
+        
+          /*on arrête le "timer" par clearInterval ,on réactive le bouton start */
+          function stop(){
+          clearInterval(t);
+          btn_start.disabled=false;
+              
+          }
+        /*dans cette fonction on arrête le "timer" ,on réactive le bouton "start" et on initialise les variables à zéro */
+        function reset(){
+         clearInterval(t);
+          btn_start.disabled=false;
+          ms=0,s=0,mn=0,h=0;
+          /*on accède aux différents span par leurs indice*/
+          sp[0].innerHTML=h+" h";
+          sp[1].innerHTML=mn+" min";
+          sp[2].innerHTML=s+" s";
+          sp[3].innerHTML=ms+" ms";
+            }
+      </script>
+	<title>Chronomètre</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+      .chronometre{
+        margin: auto ;
+        width: 300px;
+        text-align: center;
+        
+      }
+
+      .tim{
+      	margin: auto;
+      	width: 300px;
+      	border: 1px solid rgba(0,0,0,0.5);
+      	padding:5px 0;
+      	text-align: center;
+      	font-size: 1.5em;
+      	font-family: digital;
+      	margin-bottom: 10px;
+
+
+      }
+     
+      button{
+        background: #3498db;
+        color: #fff;
+        width: 70px;
+        border-radius: 5px;
+        line-height: 1.5em;
+        border: none
+      }
+     
+
+	</style>
+</head>
+<body>
+<div class="chronometre">
+  <div class="tim">
+  	<span >0 h</span> :
+  	<span >0 min</span> :
+  	<span >0 s</span> :
+  	<span >0 ms</span>
+
+  </div>
+  <button id="start" onclick="start()">Start</button>
+  <button id="stop" onclick="stop()" >Stop</button>
+  <button id="reset" onclick="reset()" >Reset</button>
+</div>
+
+  
+</body>
+</html> -->
