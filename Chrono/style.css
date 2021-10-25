@@ -7,21 +7,25 @@
 }
 
 .Chrono {
+    display: grid;
+    place-items: center;
     background-color: #fff;
-    padding: 100px;
-    /*width: 400px;
-    height: 400px;*/
+    padding: 50px;
+    /*width: 50%;
+    height: 50%;*/
     border-radius: 10px;
     box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
 }
 .Text {
-    display: flex;
+    /*display: flex;
     justify-content: center;
    /* background-color: red;*/
     align-items: center;
 }
 .Text > p {
-    font-size: 30px;
+    width: 300px;
+    background-color: none;
+    font-size: 150%;
 }
 
 
