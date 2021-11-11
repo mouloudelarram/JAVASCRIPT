@@ -92,7 +92,7 @@ footer {
     
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
  body {
     background-color: rgb(233, 232, 232);
     width: 95vw;
@@ -113,7 +113,7 @@ footer {
 .Text {
     display: flex;
     justify-content: center;
-    background-color: none;
+    background-color: red;
     width: 100%;
     align-items: center;
 }
