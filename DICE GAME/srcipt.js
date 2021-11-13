@@ -48,17 +48,19 @@ lance.addEventListener("click",()=>{
         element.style.color = "crimson";
     });
     icon_active[Obj.id].style.color ="green";
-    if (player1.totale_point >= 100){
-        alert("The player 1 Win!!!");
-    }
-    if (player2.totale_point >= 100){
-        alert("The player 2 Win!!!");
-    }
 })
 
 pass.addEventListener("click",()=>{
     
     Obj.totale_point += Obj.point_accumuler;
+    if (player1.totale_point >= 100){
+        alert("The player 1 Win!!!");
+        noveau()
+    }
+    if (player2.totale_point >= 100){
+        alert("The player 2 Win!!!");
+        noveau()
+    }
     Obj.point_accumuler = 0;
     accumulateur[Obj.id].textContent = 0;
     totle_points[Obj.id].textContent = Obj.totale_point;
@@ -74,7 +76,9 @@ pass.addEventListener("click",()=>{
 })
 
 
-nouveau.addEventListener("click",()=>{
+nouveau.addEventListener("click",()=>{noveau()});
+
+function noveau(){
     player1.totale_point =0;
     player1.point_accumuler =0;
     player2.totale_point =0;
@@ -91,4 +95,4 @@ nouveau.addEventListener("click",()=>{
         element.style.color = "crimson";
     });
     icon_active[Obj.id].style.color ="green";
-})
+}
