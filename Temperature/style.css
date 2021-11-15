@@ -1,0 +1,66 @@
+body {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.input {
+    
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.input > input{
+    background-color: none;
+    outline: none;
+    width: 50%;
+    height: 100% ;
+    font-size: 10px;
+    
+}
+
+.App > h3{
+    flex: 1;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+#DivF > h3{
+    flex: 1;
+    padding: 5px;
+    height: 20px;
+    background-color: lightgray;
+}
+
+#DivC > h3{
+    flex: 1;
+    padding: 5px;
+    height: 50px;
+    background-color: lightgray;
+}
+#DivF,#DivC
+{
+   
+    margin: 40px;
+    height: 100px;
+    display:grid;
+    justify-content: center;
+    background-color: lightgray;
+
+}
+.App{
+    padding:10px;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+}
+
+
+h2{
+    
+    font-size: 70px;
+
+}
