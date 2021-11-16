@@ -111,4 +111,8 @@ footer {
     #content{
         margin-top: 20%;
     }
+    #side{
+        
+       margin-left: -5%;
+    }
 }
