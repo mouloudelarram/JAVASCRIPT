@@ -86,6 +86,7 @@ function SendSousRequest(e){
             if (info_county.length == 0) 
             {
                 h1.textContent = "Data Not Available";
+                h1.style.display = "block";
                 h1.style.color = "red";
             }
             else {
