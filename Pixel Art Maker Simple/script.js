@@ -4,7 +4,7 @@ const button = document.querySelectorAll("button");
 let td;
 button[0].addEventListener("click",()=>{
     let makeArt_inner="";
-    if (innerWidth < 400) {
+    if (innerWidth < 400 && input[0].value > 40) {
         input[1].value = 60;
         input[0].value = 40;
     }
