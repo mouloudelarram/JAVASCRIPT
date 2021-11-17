@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+}
+
+.options{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.option{
+    margin: 10px;
+    border-bottom: 1px solid black;
+}
+.option > input {
+    outline: none;
+    border: none;
+    width: 50px;
+    padding: 5px;
+}
+
+.option > label {
+    width: 50px;
+    margin: 5px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 15px;
+    margin-right: 20px ;
+    
+}
+
+button {
+    margin: 10px;
+    width: 100px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+
+}
+
+button:hover, .option:hover{
+    border: none;
+}
+
+table{
+    padding: 20px;
+    border-collapse: collapse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+/* 
+td{
+    padding: 5px;
+} */
+
+@media (max-width: 700px){
+.options{
+    width: 100%;
+}
+.option{
+    display: block;
+    border: none;
+}
+.option > label {
+    width: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 10px;
+    
+}
+
+button {
+    width: 50px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 10px;
+    border-bottom: 1px solid none;
+
+}
+}
