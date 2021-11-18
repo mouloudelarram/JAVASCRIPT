@@ -11,7 +11,7 @@ button[0].addEventListener("click",()=>{
     for (let i=0; i<input[1].value; i++){
         makeArt_inner+="<tr>";
         for (let j=0; j<input[0].value; j++){
-            makeArt_inner += `<td style="padding: ${window.innerWidth/100}px"></td>`;
+            makeArt_inner += `<td style="padding: ${window.innerWidth/(input[0].value*3)}px"></td>`;
         }
         makeArt_inner += "</tr>";
     }
