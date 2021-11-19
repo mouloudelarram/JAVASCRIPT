@@ -1,0 +1,19 @@
+.main{
+    display: flex;
+    margin: 5%;
+}
+.style1 {
+    border-radius: 20px;
+    margin: 5px;
+    width: 1%;
+    height: 85vh;
+    transition: 1s ease-in;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border: 1px solid lightgray;
+}
+.style2 {
+    width: 99%;
+}

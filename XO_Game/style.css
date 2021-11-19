@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    width: AUTO;
+    height: auto;
+    background-color: lightgray;
+}
+
+.game {
+    width: 50%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 20px ;
+    box-shadow: -1px 4px 20px -6px rgba(0,0,0,0.75);
+    display: grid;
+    align-items: center;
+    place-items: center;
+    border: 1px solid none;
+    padding: 2%;
+    margin: 2%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+    white-space: 100%;
+}
+
+.Player1, .Player2{
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.Player1 > h1,.Player2 > h1 {
+    padding: 10px;
+    font-family: cursive;
+    font-size: 20px;
+    border: 1px solid none;
+    width: 100px;
+}
+
+.Player1 > i,.Player2 > i {
+    padding: 10px;
+    color: red;
+    font-size: 40px;
+}
+
+.row1,.row2,.row3{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column1,.column2,.column3{
+    margin: 1%;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: 1px solid lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}

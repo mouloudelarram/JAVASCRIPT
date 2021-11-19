@@ -1,0 +1,16 @@
+body {
+    display: grid;
+    place-items: center;  
+    height: 100vh;  
+}
+
+button {
+    margin-top: 50%;
+    font-size: x-large;
+    border-radius: 20px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    color: #fff;
+
+}

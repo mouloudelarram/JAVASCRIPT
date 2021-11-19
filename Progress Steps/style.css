@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(245, 245, 245);
+}
+
+.main{
+    margin: 5%;
+}
+
+.steps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step{
+    width: 20px ;
+    height: 20px;
+    border-radius: 100%;
+    border: 2px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightgray;
+}
+
+.stepAtive{
+    border: 2px solid blue;
+    color: blue;
+    transition: 2s ease;
+}
+
+.lien{
+    border: 1px solid lightgray;
+    width: 20%;
+    transition: 2s ease;
+}
+
+.lienActive{
+    border: 1px solid blue;
+    width: 20%;
+}
+
+.options{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.option_back, .option_next{
+    background-color: rgb(233, 231, 231);
+    border-radius: 5px;
+    padding: 1%;
+    margin: 15%;
+    color: white;
+    font-weight: 999;
+    cursor: pointer;
+}
+
+.option_Active {
+    background-color: blue;
+}

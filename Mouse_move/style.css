@@ -1,0 +1,8 @@
+.mouse {
+    position: fixed;
+    display: none;
+    width: 50px !important;
+    height: 50px !important;
+    border: 1px solid cyan;
+    border-radius: 50%;
+}
