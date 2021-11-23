@@ -15,7 +15,7 @@ Completer le code de "addProd" pour ajouter des element au panier et modifier le
 12- utiliser ajax pour récuperer la list des produit de http://este.ovh:8080/prods
 */
 let productsList = document.querySelector("section");
-let asideListProds = document.querySelector("aside");
+let asideListProds = document.querySelector("aside > div");
 let totale = 0;
 let tableProdsPanier = new Array();
 
@@ -23,6 +23,7 @@ let tableProdsPanier = new Array();
 
 
 function updateList(products){
+    console.log("je suis dans 1");
     //Mettre à jour la liste des produit
     productsList.innerHTML = "";
     products.forEach((element)=>{
@@ -32,8 +33,8 @@ function updateList(products){
             <div id="${element.id}" class = "add">+</div>
             <img src="${element.path}" alt=""/>
             <div class= "nameandprice">
-                <h3>${element.name}</h3>
-                <h3>${element.price}</h3>
+                <h4>${element.name}</h4>
+                <h4> ${element.price} DH</h4>
             </div>
         </div>
         `
@@ -43,7 +44,6 @@ function updateList(products){
             addProd(element)
         });
     });
-    searchfun();
     
 }
 updateList(products);
@@ -53,6 +53,7 @@ updateList(products);
 
 
 function addProd(e){
+    console.log("je suis dans 2");
     // Ajout d'un produit au panier (e : event object)
     totale+=products[e.id].price;
     if (tableProdsPanier.includes(products[e.id])){
@@ -64,13 +65,13 @@ function addProd(e){
         products[e.id].qtt++;
     }
     updateChart();
-    searchfun();
 }
 
 
 
 
 function delProd(e){
+    console.log("je suis dans 3");
 // Suppression d'un produit du panier (e : event object);
     totale -= products[e.id].price*(products[e.id].qtt);
     products[e.id].qtt=0;
@@ -81,16 +82,15 @@ function delProd(e){
 }
 
 
-
-
+/* asideListProds.innerHTML =  
+    `<input type="text" placeholder="Search"/>
+    <h4>totale : 0 DH</h4>`;
+ */
 
 function updateChart(){
+    console.log("je suis dans 4");
 // fonction pour mettre à jour le panier 
-    asideListProds.innerHTML =  
-    `
-        <input type="text" placeholder="Search"/>
-        <h4>totale : ${totale} Dh</h4>
-    `
+    asideListProds.innerHTML = `    <h4>totale : ${totale} Dh</h4>`;
     tableProdsPanier.forEach((e)=>{
         asideListProds.innerHTML +=  
         `
@@ -107,18 +107,21 @@ function updateChart(){
             delProd(element);
         });
     });
-    searchfun()
+    updateList(products);
 }
 
 
 
 
 function searchfun(){
+    console.log("je suis dans 5");
     // recherche des des produits contenant le texte saisie dans la zone recherche;
     let tempProds = new Array();
     document.querySelector("input").addEventListener("input",()=>{
-        tempProds = products.filter(e=>e.name.includes(document.querySelector("input").value));
+        tempProds = products.filter(a=>
+            a.name.includes(document.querySelector("input").value)
+            );
         updateList(tempProds);
-    })
+        });
 }
 searchfun();

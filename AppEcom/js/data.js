@@ -127,4 +127,4 @@ reqs.onreadystatechange = function(){
     }
 }
 
-reqs.send();
+//reqs.send();
