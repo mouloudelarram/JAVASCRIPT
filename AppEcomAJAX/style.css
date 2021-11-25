@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+}
+
+header{
+    width: 98%;
+    border-bottom: 1px solid;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+
+body > .main {
+    margin-top: 20px;
+    width: 99%;
+    /*border: 1px solid;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.main > section{
+    width: 70%;
+    /*border: 1px solid;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section > .item {
+    display: grid;
+    place-content: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    /*border: 1px solid;*/
+    margin: 5px;
+}
+
+.item > h1{
+    position: absolute;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    top: -10px;
+    right: -10px;
+}
+
+.item > img{
+    width: 150px;
+    height: 100%;
+}
+
+.item > .bottom_prod {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid;*/
+    font-size: 12px;
+    width: 100%;
+}
+
+aside {
+    width: 19%;
+    /*border: 1px solid;*/
+
+}
+
+aside > input {
+    border: none ;
+    top: 0;
+    width: 90%;
+    outline: none;
+    padding: 5px;
+}
+
+aside > h1 {
+    width: 95%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    font-size: 15px;
+}
+aside > div > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid;*/
+}
+.product_select{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.remove > img{
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.product_select > img{
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.remove > h1{
+    font-size: 50px;
+    color: red;
+    cursor: pointer;
+}
